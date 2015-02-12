@@ -1,0 +1,37 @@
+{
+    "name": "less-plugin-rtl",
+    "version": "0.0.1",
+    "description": "ltr to rtl less plugin",
+    "homepage": "http://lesscss.org",
+    "author": {
+        "name": "Luke Page"
+    },
+    "bugs": {
+        "url": "https://github.com/less/less-plugin-rtl/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/less/less-plugin-rtl.git"
+    },
+    "licenses": [
+        {
+            "type": "Apache v2",
+            "url": "https://github.com/less/less-plugin-rtl/blob/master/LICENSE"
+        }
+    ],
+    "main": "lib/index.js",
+    "engines": {
+        "node": ">=0.4.2"
+    },
+    "scripts": {
+        "test": "node test"
+    },
+    "devDependencies": {
+        "less": "^2.4.0",
+	    "diff": "^1.0"
+    },
+    "keywords": [
+        "less plugins",
+        "inline images"
+    ]
+}
