@@ -14,3 +14,6 @@
   margin: 1px 7px 3px;
   margin: 1px 4px 3px 2px;
 }
+.rtl-only {
+  margin: 3px;
+}
