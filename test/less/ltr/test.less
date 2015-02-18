@@ -1,0 +1,28 @@
+.reverse {
+  float: left;
+  float: right/*comment*/;
+  margin-left: 5px;
+  padding-right: 3px;
+  font-size: 12px; /* unchanged*/
+  left: 3px;
+  border-left-style: dashed;
+}
+.shorthands {
+  @top: 1px;
+  @right: 2px;
+  @bottom: 3px;
+  @left: 4px;
+  @all: 5px;
+  @vertical: 6px;
+  @horizontal: 7px;
+
+  margin: @all;
+  margin: @vertical @horizontal;
+  margin: @top @horizontal @bottom;
+  margin: @top @right @bottom @left;
+}
+& when (@rtl) {
+  .rtl-only {
+    margin: 3px;
+  }
+}

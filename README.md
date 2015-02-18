@@ -3,4 +3,39 @@
 less-plugin-rtl
 ===============
 
-TODO
+Reverses less from ltr to rtl
+
+```less
+.reverse {
+  float: left;
+  margin-left: 5px;
+  margin: 1px 2px 3px 4px;
+  & when (@rtl) {
+    color: green;
+  }
+}
+```
+
+ Becomes...
+
+```css
+.reverse {
+  float: right;
+  margin-right: 5px;
+  margin: 1px 4px 3px 2px;
+  color: green;
+}
+```
+
+To use with lessc
+
+```bash
+$ npm install -g less-plugin-rtl
+$ lessc --rtl file.less out.css
+```
+
+and to run in LTR mode..
+
+```bash
+$ lessc --rtl="dir=LTR" file.less out.css
+```
