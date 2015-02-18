@@ -1,4 +1,10 @@
 .reverse {
   float: right;
   float: left /*comment*/;
+  margin-right: 5px;
+  padding-left: 3px;
+  font-size: 12px;
+  /* unchanged*/
+  right: 3px;
+  border-right-style: dashed;
 }
