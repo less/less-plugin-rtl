@@ -1,6 +1,6 @@
 {
     "name": "less-plugin-rtl",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "ltr to rtl less plugin",
     "homepage": "http://lesscss.org",
     "author": {
