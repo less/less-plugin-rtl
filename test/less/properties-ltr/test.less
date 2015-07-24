@@ -1,0 +1,47 @@
+.reverse {
+  -ltr-reverse-float: left;
+  -ltr-float: left;
+  -rtl-reverse-float: left;
+  -rtl-float: left;
+
+  -ltr-reverse-margin-left: 5px;
+  -ltr-margin-left: 5px;
+  -rtl-reverse-margin-left: 5px;
+  -rtl-margin-left: 5px;
+
+  font-size: 12px; /* unchanged*/
+
+  -ltr-reverse-left: 3px;
+  -ltr-left: 3px;
+  -rtl-reverse-left: 3px;
+  -rtl-left: 3px;
+}
+.shorthands {
+  @top: 1px;
+  @right: 2px;
+  @bottom: 3px;
+  @left: 4px;
+  @all: 5px;
+  @vertical: 6px;
+  @horizontal: 7px;
+
+  -ltr-reverse-margin: @all;
+  -ltr-reverse-margin: @vertical @horizontal;
+  -ltr-reverse-margin: @top @horizontal @bottom;
+  -ltr-reverse-margin: @top @right @bottom @left;
+
+  -ltr-margin: @all;
+  -ltr-margin: @vertical @horizontal;
+  -ltr-margin: @top @horizontal @bottom;
+  -ltr-margin: @top @right @bottom @left;
+
+  -rtl-reverse-margin: @all;
+  -rtl-reverse-margin: @vertical @horizontal;
+  -rtl-reverse-margin: @top @horizontal @bottom;
+  -rtl-reverse-margin: @top @right @bottom @left;
+
+  -rtl-margin: @all;
+  -rtl-margin: @vertical @horizontal;
+  -rtl-margin: @top @horizontal @bottom;
+  -rtl-margin: @top @right @bottom @left;
+}
