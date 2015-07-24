@@ -3,7 +3,8 @@ var less = require("less"),
     lessTester = lessTest(),
     Plugin = require('../lib'),
     rtlPlugin = new Plugin(),
-    ltrPlugin = new Plugin("dir=LTR"),
+    ltrPlugin = new Plugin("dir=LTR --auto-reverse vars=true"),
+    propertiesRtlPlugin = new Plugin("dir=RTL --auto-reverse=false"),
     stylize = less.lesscHelper.stylize;
 
 console.log("\n" + stylize("LESS - RTL", 'underline') + "\n");
@@ -13,7 +14,12 @@ lessTester.runTestSet(
     "rtl/");
 lessTester.runTestSet(
     {strictMath: true, relativeUrls: true, silent: true, plugins: [ltrPlugin] },
-    "ltr/")
+    "ltr/");
+
+lessTester.runTestSet(
+  {strictMath: true, relativeUrls: true, silent: true, plugins: [propertiesRtlPlugin] },
+  "properties-rtl/");
+
 
 if (lessTester.finish) {
 	lessTester.finish();

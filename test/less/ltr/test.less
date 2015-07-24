@@ -1,6 +1,7 @@
 .reverse {
   float: left;
   float: right/*comment*/;
+  float: left !important;
   margin-left: 5px;
   padding-right: 3px;
   font-size: 12px; /* unchanged*/
@@ -20,9 +21,15 @@
   margin: @vertical @horizontal;
   margin: @top @horizontal @bottom;
   margin: @top @right @bottom @left;
+  margin: @top @right @bottom @left !important;
 }
 & when (@rtl) {
   .rtl-only {
     margin: 3px;
+  }
+}
+& when (@dir = ltr) {
+  .ltr-only {
+    padding: 4px;
   }
 }
