@@ -1,6 +1,6 @@
 {
     "name": "less-plugin-rtl",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "ltr to rtl less plugin",
     "homepage": "http://lesscss.org",
     "author": {
@@ -21,14 +21,15 @@
     ],
     "main": "lib/index.js",
     "engines": {
-        "node": ">=0.4.2"
+        "node": ">=14"
     },
     "scripts": {
         "test": "node test"
     },
     "devDependencies": {
-        "less": "^2.4.0",
-	    "diff": "^1.0"
+        "@less/test-data": "^3.12.0",
+        "diff": "^1.0",
+        "less": "^4.2.0"
     },
     "keywords": [
         "less plugins",
